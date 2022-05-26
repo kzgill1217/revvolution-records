@@ -3,15 +3,8 @@
     padding: 0;
 }
 
-/* .background {
-        background-image: url('hero_image_landscape.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-      
-} */
 @media (max-width: 299px) and (orientation:portrait) {
-    .background {
+    body {
         background-image: url('hero_image_portrait.jpg');
         background-size: cover;
         background-position: left;
@@ -23,7 +16,7 @@
 
 
 @media (min-width: 300px) and (orientation:portrait){
-    .background {
+    body {
         background-image: url('hero_image_portrait.jpg');
         background-size: cover;
         background-position: left;
@@ -34,7 +27,7 @@
 } 
 
 @media (min-width: 700px) and (orientation:portrait){
-    .background {
+    body {
         background-image: url('hero_image_tab.jpg');
         background-size: cover;
         background-position: left;
@@ -44,22 +37,10 @@
 
 }
 
-@media (max-width: 1179px) and (orientation:landscape) {
-    .background {
+@media (max-width: 1999px) and (orientation:landscape) {
+    body {
         background-image: url('hero_image_landscape.jpg');
         background-size: cover;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        height: 100vh;
-      }
-
-}
-
-@media (min-width: 1180px) and (orientation:landscape) {
-    .background {
-        background-color: lightgray;
-        background-image: url('hero_image_landscape.jpg');
-        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         height: 100vh;
@@ -68,14 +49,28 @@
 }
 
 @media (min-width: 2000px)and (orientation:landscape) {
-    .background {
+    body {
         background-color: lightgray;
         background-image: url('hero_image_landscape.jpg');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-
+        height: 100vh;
       }
 
 }
 
+.revvolutionrecordspresents {
+    mask: url(revvolutionrecordspresents.svg);
+    display: inline-block;
+    width: 1000px;
+    height: 300px;
+    color: black;
+   
+    mask-size: cover;
+}
+
+.revvolutionrecordspresents:hover,
+.iconrevvolutionrecordspresents:focus {
+  color: red;
+}
